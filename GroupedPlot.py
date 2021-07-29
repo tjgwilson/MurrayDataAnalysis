@@ -79,5 +79,6 @@ for a in ax.flat:
     a.tick_params(which='both',direction='in',bottom=True,top=True,left=True,right=True)
 
 fig.subplots_adjust(left=0.06,right=0.98,bottom=0.09,top=0.98)
+fig.savefig("Correlation.pdf",dpi=300,transparent=True)
 
 plt.show()
