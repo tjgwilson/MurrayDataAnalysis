@@ -39,7 +39,7 @@ V5 = df["V5"].astype(int)
 V2 = df["V2"].astype(int)
 
 corr, _ = pearsonr(V2, V5) #calculate the Pearson's coefficient (covarience matrix dropped)
-print('V5/V1 Pearsons correlation: %.3f' % corr) #print coef.
+print('V5/V2 Pearsons correlation: %.3f' % corr) #print coef.
 
 coef = np.polyfit(V2,V5,1) #fit linear best fit using least squares regression
 poly1d_fn = np.poly1d(coef) #convert fit to equation for easy plotting
